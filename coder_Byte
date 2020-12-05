@@ -1,0 +1,412 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+.flex-container {
+display: flex;
+height: 5%;
+}
+.flex-container > div {
+  background-color: grey;
+  margin: 5px;
+  padding: 2px;
+  font-size: 20px;
+  width: 16%;
+  height: 78%;
+}
+</style>
+
+</head>
+<div>
+<img src="https://media.licdn.com/dms/image/C511BAQFJDv8dcL-IpQ/company-background
+_10000/0?e=2159024400&v=beta&t=zp2V4ZeLnIkedDW3rPx2ChYbCnDT57J8RKyBQlKZtxk" style="height:20%;width:35%;margin-left:28%">
+<center><b>Please rate your satisfaction on the following atrribute of our service.</b></center>
+ </div>
+
+ <div style="margin-left:30%;margin-right:23%">
+ <center style="margin-right:21%;padding:2%"><b>Responsiveess</b></center>
+ &nbsp;Extremely Bad &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bad&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+ &nbsp; Natural&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Good&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+ &nbsp; &nbsp; &nbsp;Extremely Good
+  <div class="flex-container">
+  <div id="1" onmouseover="responsive(this.id)"></div>
+  <div id="2" onmouseover="responsive(this.id)"></div>
+  <div id="3" onmouseover="responsive(this.id)"></div> 
+  <div id="4" onmouseover="responsive(this.id)"></div>
+  <div id="5" onmouseover="responsive(this.id)"></div>  
+</div>
+<center style="margin-right:21%;padding:2%;margin-top:18px;"><b>Competency in advising right solutios</b></center>
+ &nbsp;Extremely Bad &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bad&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+ &nbsp; Natural&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Good&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+ &nbsp; &nbsp; &nbsp;Extremely Good
+<div class="flex-container">
+  <div id="6" onmouseover="rightsolution(this.id)"></div>
+  <div id="7" onmouseover="rightsolution(this.id)"></div>
+  <div id="8" onmouseover="rightsolution(this.id)"></div> 
+  <div id="9" onmouseover="rightsolution(this.id)"></div>
+  <div id="10" onmouseover="rightsolution(this.id)"></div>  
+</div>
+<center style="margin-right:21%;padding:2%;margin-top:18px;"><b>Trust Worthiness</b></center>
+ &nbsp;Extremely Bad &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bad&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+ &nbsp; Natural&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Good&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+ &nbsp; &nbsp; &nbsp;Extremely Good
+<div class="flex-container">
+  <div id="11" onmouseover="trustworthy(this.id)"></div>
+  <div id="12" onmouseover="trustworthy(this.id)"></div>
+  <div id="13" onmouseover="trustworthy(this.id)"></div> 
+  <div id="14" onmouseover="trustworthy(this.id)"></div>
+  <div id="15" onmouseover="trustworthy(this.id)"></div>  
+</div>
+<center style="margin-right:21%;padding:2%;margin-top:18px;"><b>Customer service and support</b></center>
+ &nbsp;Extremely Bad &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bad&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+ &nbsp; Natural&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Good&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+ &nbsp; &nbsp; &nbsp;Extremely Good
+<div class="flex-container">
+  <div id="16" onmouseover="service(this.id)"></div>
+  <div id="17" onmouseover="service(this.id)"></div>
+  <div id="18" onmouseover="service(this.id)"></div> 
+  <div id="19" onmouseover="service(this.id)"></div>
+  <div id="20" onmouseover="service(this.id)"></div>  
+</div>
+<center><button type="button" style="border-radius:5px;color:white;background:#54A328;width:20%;height:3.5%;margin-right:20%;margin-top:30px;" onclick="submission()">Next</button></center>
+
+  
+  
+  </div>
+ 
+
+
+</html>
+<script>
+  var i;
+  var response;
+  var service_rate;
+  var right_sol;
+  var trust;
+function responsive(hover){
+  
+  
+	switch(hover){
+	case '1':
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=3;i<8;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementById('1');
+	y.style.background="red";
+    response = "Extremely Bad";
+	break;
+	
+	
+	case '2':
+	var y = document.getElementsByTagName('div');
+	for(var i=4;i<8;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=3;i<5;i++){
+	y[i].style.background = "#FF5733";
+	}
+	response = "Bad";
+	break;
+	
+	
+	case '3':
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=5;i<8;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=3;i<6;i++){
+	y[i].style.background = "orange";
+	}
+	response = "Natural";
+	break;
+	
+	case '4':
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=6;i<8;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=3;i<7;i++){
+	y[i].style.background = "#97DC70";
+	}
+	response = "Good";
+	break;
+	
+	case '5':
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=7;i<8;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=3;i<8;i++){
+	y[i].style.background = "green";
+	}
+	response = "Extremely Good";
+	break;
+	
+	}
+}
+
+function rightsolution(hover){
+
+var i;
+  
+	switch(hover){
+	case '6':
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=10;i<14;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementById('6');
+	y.style.background="red";
+	right_sol = "Extremely Bad";
+	break;
+	
+	
+	case '7':
+	var y = document.getElementsByTagName('div');
+	for(var i=11;i<14;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=9;i<11;i++){
+	y[i].style.background = "#FF5733";
+	}
+	right_sol = "Bad";
+	break;
+	
+	
+	case '8':
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=11;i<14;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=9;i<12;i++){
+	y[i].style.background = "orange";
+	}
+	right_sol = "Natural";
+	break;
+	
+	case '9':
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=12;i<14;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=9;i<13;i++){
+	y[i].style.background = "#97DC70";
+	}
+	right_sol = "Good";
+	break;
+	
+	case '10':
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=13;i<14;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=9;i<14;i++){
+	y[i].style.background = "green";
+	}
+	right_sol = "Extremely Good";
+	break;
+	
+	}
+
+}
+
+function trustworthy(hover){
+
+var i;
+  
+	switch(hover){
+	case '11':
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=15;i<20;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementById('11');
+	y.style.background="red";
+	trust = "Extremely Bad";
+	break;
+	
+	
+	case '12':
+	var y = document.getElementsByTagName('div');
+	for(var i=16;i<20;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=15;i<17;i++){
+	y[i].style.background = "#FF5733";
+	}
+	trust = "Bad";
+	break;
+	
+	
+	case '13':
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=17;i<20;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=15;i<18;i++){
+	y[i].style.background = "orange";
+	}
+	trust = "Natural";
+	break;
+	
+	case '14':
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=18;i<20;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=15;i<19;i++){
+	y[i].style.background = "#97DC70";
+	}
+	trust = "Good";
+	break;
+	
+	case '15':
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=19;i<20;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=15;i<20;i++){
+	y[i].style.background = "green";
+	}
+	trust = "Extremely Good";
+	break;
+	
+	}
+}
+
+function service(hover){
+
+var i;
+  
+	switch(hover){
+	case '16':
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=21;i<26;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementById('16');
+	y.style.background="red";
+	service_rate ="Extremely Bad";
+	break;
+	
+	
+	case '17':
+	var y = document.getElementsByTagName('div');
+	for(var i=22;i<26;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=21;i<23;i++){
+	y[i].style.background = "#FF5733";
+	service_rate ="Bad";
+	}
+	break;
+	
+	
+	case '18':
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=23;i<26;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=21;i<24;i++){
+	y[i].style.background = "orange";
+	}
+	service_rate ="Natural";
+	break;
+	
+	case '19':
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=24;i<26;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=21;i<25;i++){
+	y[i].style.background = "#97DC70";
+	}
+	service_rate ="Good";
+	break;
+	
+	case '20':
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=25;i<26;i++){
+	y[i].style.background = "grey";
+	}
+	
+	var y = document.getElementsByTagName('div');
+	for(var i=21;i<26;i++){
+	y[i].style.background = "green";
+	}
+	service_rate ="Extremely Good";
+	break;
+	
+	}
+}
+
+function submission(){
+      
+	  var res = window.response;
+	  console.log('Responsiveness is ' + res);
+	  
+	  var rit = window.right_sol;
+	  console.log('Competency in advising right solution is ' + rit);
+	  var tru = window.trust;
+	  console.log('Trustworthy ' + tru);  
+	  var ser = window.service_rate;
+	  console.log('Service ' + ser);
+	 }
+</script>
